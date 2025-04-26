@@ -5,25 +5,25 @@ const features = [
     icon: "fas fa-cut",
     title: "Master Craftsmanship",
     description: "Our master tailors bring over 40 years of experience in the fine art of bespoke tailoring.",
-    image: "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1587337302506-422664fb2723?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
   },
   {
     icon: "fas fa-ruler",
     title: "Perfect Measurements",
     description: "We take over 30 precise measurements to ensure your garments fit perfectly every time.",
-    image: "https://images.unsplash.com/photo-1495994458560-6f9d661cf8e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1611937663641-5cef5189d71b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
   },
   {
     icon: "fas fa-tshirt",
     title: "Premium Fabrics",
     description: "We source only the finest fabrics from renowned mills in Italy, England, and Scotland.",
-    image: "https://images.unsplash.com/photo-1561233835-f937539b95b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1598032895397-b9472444bf93?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
   },
   {
     icon: "fas fa-hand-holding-heart",
     title: "Personal Service",
     description: "Every client receives dedicated attention from initial consultation to final fitting.",
-    image: "https://images.unsplash.com/photo-1580618864180-b4d27049a8da?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1619533394727-57d522857f89?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
   }
 ];
 

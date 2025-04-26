@@ -3,28 +3,34 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-    alt: "Tailor fitting a customer",
-    title: "Personal Fitting Sessions",
-    description: "Our master tailors ensure every suit fits perfectly with detailed measurements and adjustments."
+    src: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    alt: "Bespoke suit measurement",
+    title: "Precision Measurements",
+    description: "Our master tailors take over 30 detailed measurements to ensure the perfect fit for every gentleman."
   },
   {
-    src: "https://images.unsplash.com/photo-1590401566083-cf714302b086?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-    alt: "Fabric selection",
+    src: "https://images.unsplash.com/photo-1561209309-e2d356bde010?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    alt: "Gentleman in tailored suit",
+    title: "Elegant Three-Piece Suits",
+    description: "Handcrafted three-piece suits that blend timeless sophistication with contemporary style."
+  },
+  {
+    src: "https://images.unsplash.com/photo-1609318604244-a264cfbe0e9b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    alt: "Suit fabric selection",
     title: "Premium Fabric Selection",
-    description: "Choose from our extensive collection of high-quality fabrics sourced from the finest mills worldwide."
+    description: "Choose from our exclusive range of Italian and British wools, cashmeres, and silk blends."
   },
   {
-    src: "https://images.unsplash.com/photo-1491336477066-31156b5e4f35?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-    alt: "Custom suit details",
-    title: "Exquisite Craftsmanship",
-    description: "Every stitch is placed with precision and care, creating garments of exceptional quality."
+    src: "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    alt: "Suit details",
+    title: "Exquisite Details",
+    description: "Each suit is finished with meticulous attention to detail - from hand-stitched buttonholes to personalized linings."
   },
   {
-    src: "https://images.unsplash.com/photo-1475178626620-a4d074967452?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-    alt: "Suit showcase",
-    title: "Finished Masterpieces",
-    description: "The completed suits represent the perfect balance of classic style and modern elegance."
+    src: "https://images.unsplash.com/photo-1608228088998-57828365d486?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    alt: "Formal wedding attire",
+    title: "Special Occasion Formalwear",
+    description: "Bespoke morning suits, tuxedos, and formal attire for life's most important celebrations."
   }
 ];
 
@@ -40,16 +46,6 @@ const Gallery = () => {
     }, 6000);
     
     return () => clearInterval(interval);
-  }, [activeIndex]);
-
-  useEffect(() => {
-    if (carouselRef.current) {
-      const scrollPosition = activeIndex * carouselRef.current.offsetWidth;
-      carouselRef.current.scrollTo({
-        left: scrollPosition,
-        behavior: "smooth"
-      });
-    }
   }, [activeIndex]);
 
   const handleDotClick = (index: number) => {
